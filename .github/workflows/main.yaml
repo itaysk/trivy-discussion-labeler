@@ -1,0 +1,8 @@
+on:
+  discussion:
+    types: [created, edited, answered]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: main.sh

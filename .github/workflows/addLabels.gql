@@ -1,0 +1,7 @@
+mutation AddLabels($labelId: ID!, $labelableId:ID!) {
+  addLabelsToLabelable(
+    input: {labelIds: [$labelId], labelableId: $labelableId}
+  ) {
+    clientMutationId
+  }
+}

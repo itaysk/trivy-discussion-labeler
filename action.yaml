@@ -1,0 +1,12 @@
+name: 'trivy-discussion-labeler'
+description: 'Automatically apply labels to discussions'
+inputs:
+  test1:
+    description: 'yo'
+    required: false
+    default: 'yoyo'
+runs:
+  using: "composite"
+  steps:
+    - run: main.sh
+      shell: bash
